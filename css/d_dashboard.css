@@ -1,0 +1,160 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    /* height: 100vh;
+    width: 100vw; */
+    
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#555;
+    background: #ecf0f3;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px auto;
+    width:96%;
+    min-height: 90%;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #b3b5b8,
+                -13px -13px 20px #ffffff;
+}
+
+.button {
+    outline: none;
+    border:none;
+    cursor: pointer;
+    width:15vw;
+    float: right;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color:#fff;
+    text-align: center;
+    background: #24cfaa;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background:#2fdbb6;
+}
+
+.button:active {
+    background:#1da88a;
+}
+
+.clearfix {
+    clear: both;    
+}
+
+/* Header */
+
+header {
+    overflow: hidden;
+    background-color: #c1c5c7;
+    border-radius: 40px 40px 0 0;
+}
+
+.logo {
+    float: left;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.user-details {
+    float: right;
+    margin-right: 60px;
+    margin-top: 40px;
+
+    background-color: #dddddd;
+    border-radius: 50px;
+
+    box-shadow: 13px 13px 20px #a6a9ac,
+                -13px -13px 20px #cccccc;
+
+    transition: 0.6s;
+}
+
+.user-details:hover {
+    background-color: #efefef;
+    /* box-shadow: 2px 5px #333333; */
+}
+
+.user-details form, .user-details p {
+    display: inline-block;
+}
+
+.user-details img {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.user-details p {
+    position: relative;
+    top: -7px;
+    font-size: 2em;
+    margin: 0;
+}
+
+.user-details button {
+    border: none;
+    background-color: #00000000;
+}
+
+.user-details button:focus {
+    outline: none;
+}
+
+/* Main content */
+
+main {
+    flex: 1 0 auto;
+    overflow: hidden;
+}
+
+.content {
+    float: right;
+    width: 70%;
+
+    margin: 30px 60px 30px 30px;
+}
+
+.sidebar {
+    padding: 40px 40px;
+    float: left;
+}
+
+.sidebar .button {
+    margin: 20px;
+}
+
+/* Footer */
+
+
+
+footer{
+    overflow: hidden;
+    background-color: #cccccc;
+    text-align: center;
+
+    border-radius: 0 0 40px 40px;
+}
+
+footer p {
+    padding: 20px 0;
+}
