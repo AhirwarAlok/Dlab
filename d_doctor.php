@@ -1,7 +1,11 @@
 <?php
 
     session_start();
-
+    if (!isset($_SESSION["uid"]))
+   {
+    echo '<script>alert("Please login first!")</script>';
+    header("location: index.php");
+   }
     $uid = $_SESSION['uid'];
     $servername = "localhost";
     $username = "Alok";
@@ -46,7 +50,7 @@
     <div class="page">
         <header>
             <div class="university-details">
-                <img class="logo" src="images/university_details.png" alt="" height="128">
+            <a href= "index.php"><img  class="logo" src="images/university_details.png" alt="" height="128"></a>
             </div>
 
             <div class="user-details">
@@ -59,7 +63,7 @@
         </header>
 
         <div class="clearfix"></div>
-        <main>
+        <main> 
         <div class="sidebar">
                 <form method="get" action="order_test.php">
                     <button type="submit" class = "button">Order Test</button><br><br>

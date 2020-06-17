@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+header {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.logo {
+    float: left;
+    margin-left: 320px;
+    margin-top: 10px;
+}
+
+main {
+    width: 70%;
+    margin: 0px auto;
+    border: 1px solid #000000;
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+#date {
+    float: right;
+    border-bottom: 2px dotted #000000;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+form {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+.form-element {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-element label {
+    display: inline-block;
+    width: 150px;
+}
+
+.form-element input {
+    display: inline-block;
+    border: none;
+    border-bottom: 2px dotted #000000;
+    width: 300px;
+    margin-right: 100px;
+}
+
+.test-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left-side {
+    width: 60%;
+    float: left;
+}
+
+.left-side .form-element input {
+    margin-right: 10px;
+}
+
+.right-side {
+    float: right;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+
+.form-element-02 {
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.form-element-02 label {
+    display: inline-block;
+    width: 200px;
+}
+
+.form-element-02 input {
+    border: none;
+    border-bottom: 2px dotted #000000;
+    width: 300px;
+}
+
+.right-side-element {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-element-02 textarea {
+    border: none;
+    border-bottom: 2px dotted #000000;
+    width: 800px;
+}
+
+.push-down {
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    margin-top: 10px;
+    margin-left: 30vw;
+}
+
+.push-down-01 {
+    padding-bottom: 30px;
+}
+
+.push-down-02 {
+    padding-bottom: 18px;
+}
+
+.right-side-element-02 {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 235px;
+}
+
+.right-side-element-03 {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 115px;
+}

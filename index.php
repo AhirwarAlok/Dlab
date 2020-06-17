@@ -12,35 +12,58 @@
     {
     die("Connection failed: " . $conn->connect_error);
     }
-    $uid = $_POST['uid'];
-    $utype = $_POST['user'];
-    $sql = "SELECT EmployeeID FROM employee where EmployeeID = '$uid' and Employee_Type = '$utype'";
-    $result = $conn->query($sql) or die("Faild to fatch database" . mysql_error());
-    $row = $result->fetch_assoc();
-    if ($row[EmployeeID] == $uid) 
+    if (isset($_SESSION['uid'])) 
     {
-        
-        if(isset($uid))
+        $uid  = $_SESSION['uid'];
+        $sql = "SELECT Type FROM employee where EmployeeID = '$uid'";
+        $result = $conn->query($sql) or die("Faild to fatch database" . mysql_error());
+        $row = $result->fetch_assoc();
+        $utype = $row['Type'];
+        if($utype == "Doctor")
         {
-            $_SESSION['uid'] = $uid;
-            if($utype == "Doctor")
-            {
-                echo "<script>location.href='d_doctor.php'</script>";
-            }
-            elseif ($utype == "Staff") 
-            {
-                echo "<script>location.href='d_staff.php'</script>";
-            }
-            else
-            {
-                echo "<script>location.href='d_patient.php'</script>";
-            }
+            echo "<script>location.href='d_doctor.php'</script>";
         }
-        
+         elseif ($utype == "Staff") 
+        {
+            echo "<script>location.href='d_staff.php'</script>";
+        }
+        else
+        {
+            echo "<script>location.href='d_patient.php'</script>";
+        }
     } 
     else 
     {
-        echo '<script>alert("Incorrect User Type Of ID, Please try again!")</script>';
+        $uid = $_POST['uid'];
+        $utype = $_POST['user'];
+        $sql = "SELECT EmployeeID FROM employee where EmployeeID = '$uid' and Type = '$utype'";
+        $result = $conn->query($sql) or die("Faild to fatch database" . mysql_error());
+        $row = $result->fetch_assoc();
+        if ($row[EmployeeID] == $uid) 
+        {
+            
+            if(isset($uid))
+            {
+                $_SESSION['uid'] = $uid;
+                if($utype == "Doctor")
+                {
+                    echo "<script>location.href='d_doctor.php'</script>";
+                }
+                elseif ($utype == "Staff") 
+                {
+                    echo "<script>location.href='d_staff.php'</script>";
+                }
+                else
+                {
+                    echo "<script>location.href='d_patient.php'</script>";
+                }
+            }
+            
+        } 
+        else 
+        {
+            echo '<script>alert("Incorrect User Type Or ID, Please try again!")</script>';
+        }
     }
     
     $conn->close();

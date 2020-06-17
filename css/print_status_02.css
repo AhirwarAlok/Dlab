@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+header {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.logo {
+    float: left;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+main {
+    width: 90%;
+    margin: 0px auto;
+    border: 1px solid #000000;
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+#date {
+    float: right;
+    border-bottom: 2px dotted #000000;
+    margin-right: 50px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+form {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+.form-element {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 5px;
+}
+
+.form-text {
+    display: inline-block;
+    width: 100px;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px dotted #000000;
+    margin-right: 50px;
+    width: 300px;
+}
+
+.push-down {
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    margin-left: 37vw;
+}
+
+.form-element-02 label, .form-element-03 label {
+    display: inline-block;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.form-element-02 input {
+    width: 150px;
+}
+
+.form-element-03 input {
+    width: 360px;
+}

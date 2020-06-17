@@ -1,0 +1,91 @@
+/* Form container */
+
+.form-container {
+    width: 90%;
+    margin: 50px auto;
+    font-size: 1.3em;
+}
+
+.form-container h3 {
+    text-align: center;
+}
+
+.form-container input[type="text"], .form-container input[type="submit"], select {
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 18px;
+    color: #555;
+    padding:20px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}
+
+#patient-name {
+    /* display: inline-block; */
+    width: 60%;
+}
+
+#patient-name label {
+    margin-right: 25px;
+}
+
+#patient-name input {
+    width: 39%;
+    margin-right: 100px;
+}
+
+#patient-age {
+    /* display: inline-block; */
+    width: 10%;
+    margin-right: 80px;
+}
+
+#patient-sex {
+    /* display: inline-block; */
+    /* float: right; */
+    width: 20%;
+}
+
+.form-display-line label {
+    margin-right: 10px;
+}
+
+#patient-email input{
+    width: 39%;
+    margin-right: 100px;
+}
+
+#patient-mobile input {
+    width: 25%;
+}
+
+select {
+    display: inline-block;
+    width: 200px;
+}
+
+select:active {
+    outline: none;
+}
+
+.form-container input[type="submit"] {
+    outline: none;
+    border:none;
+    cursor: pointer;
+    height: 60px;
+
+    width: 120px;
+    
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color:#fff;
+    text-align: center;
+    background: #24cfaa;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
